@@ -12,6 +12,7 @@ body {
     width: 100vw;
     height: 100vh;
     font-family: 'roboto';
+    -webkit-font-smoothing: antialiased;
 }
 
 #userAvatar {
@@ -25,11 +26,35 @@ body {
 
 #userLogin {
     color: #ff79c6;
+    font-size: 20px;
     margin-top: 1rem;
 }
 
 .wrapperLinks {
     display: flex;
     flex-direction: column;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
+
+.link {
+    width: 20rem;
+    height: 3rem;
+    color: #f8f8f2;
+    font-weight: 500;
+    background-color: #282a36;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #f8f8f2;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.link:hover {
+    transition: 0.5s;
+    cursor: pointer;
+    border-color: #ff79c6;
+    color: #ff79c6;
+}  
