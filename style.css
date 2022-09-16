@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: #282a36;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.avatarLogo {
+    width: 13rem;
+    height: 13rem;
+    border-radius: 100%;
+    border-style: solid;
+    border-color: #50fa7b;
+    border-width: 8px;
+}
