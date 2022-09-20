@@ -5,6 +5,7 @@ async function getUser(user) {
         const { data } = await axios.get(`https://api.github.com/users/${user}`)
         
         userLogin.textContent = `@${data.login}`;
+        userAvatar.src = data.avatar_url;
     } catch(error) {
         console.error(error)
     }
